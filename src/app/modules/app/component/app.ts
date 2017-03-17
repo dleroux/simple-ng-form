@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styles: [
     require('normalize.css/normalize.css'),
     require('./typography.css')
-  ]
+  ],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'app works!';
